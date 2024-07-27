@@ -35,4 +35,4 @@ jobs:
     - name: Run test
       run: pnpm test
     - name: Run build
-      run: pnpm run build --if-present
+      run: pnpm run build
