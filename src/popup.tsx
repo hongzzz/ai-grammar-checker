@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
+import { logger } from "./util/logger";
+
+logger.log("Popup Script Loaded");
 
 const Popup = () => {
   const [count, setCount] = useState(0);

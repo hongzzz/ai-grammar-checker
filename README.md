@@ -1,70 +1,11 @@
-# Chrome Extension TypeScript Starter
+# AI Grammar Checker
 
-![build](https://github.com/chibat/chrome-extension-typescript-starter/workflows/build/badge.svg)
+Welcome to the AI Grammar Checker project! 
 
-Chrome Extension, TypeScript and Visual Studio Code
+## License
 
-## Prerequisites
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-* [node + npm](https://nodejs.org/) (Current Version)
+## Contact
 
-## Option
-
-* [Visual Studio Code](https://code.visualstudio.com/)
-
-## Includes the following
-
-* TypeScript
-* Webpack
-* React
-* Jest
-* Example Code
-    * Chrome Storage
-    * Options Version 2
-    * content script
-    * count up badge number
-    * background
-
-## Project Structure
-
-* src/typescript: TypeScript source files
-* src/assets: static files
-* dist: Chrome Extension directory
-* dist/js: Generated JavaScript files
-
-## Setup
-
-```
-npm install
-```
-
-## Import as Visual Studio Code project
-
-...
-
-## Build
-
-```
-npm run build
-```
-
-## Build in watch mode
-
-### terminal
-
-```
-npm run watch
-```
-
-### Visual Studio Code
-
-Run watch mode.
-
-type `Ctrl + Shift + B`
-
-## Load extension to chrome
-
-Load `dist` directory
-
-## Test
-`npx jest` or `npm run test`
+If you have any questions or suggestions regarding the AI Grammar Checker project, feel free to contact us at [email protected]
