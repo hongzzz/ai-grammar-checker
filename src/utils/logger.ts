@@ -1,8 +1,10 @@
 class Logger {
   private appName: string;
+  private isProduction: boolean;
 
   constructor(appName: string) {
     this.appName = appName;
+    this.isProduction = false;
   }
 
   private formatMessage(level: string, color: string, ...args: any[]) {
@@ -11,7 +13,9 @@ class Logger {
   }
 
   log(...args: any[]) {
-    console.log(...this.formatMessage('LOG', '#007acc', ...args));
+    if (!this.isProduction) {
+      console.log(...this.formatMessage('LOG', '#007acc', ...args));
+    }
   }
 
   error(...args: any[]) {
@@ -23,9 +27,10 @@ class Logger {
   }
 
   info(...args: any[]) {
-    console.info(...this.formatMessage('INFO', '#388e3c', ...args));
+    if (!this.isProduction) {
+      console.info(...this.formatMessage('INFO', '#388e3c', ...args));
+    }
   }
 }
 
-export const logger = new Logger("AI Grammar Checker");
-
+export const logger = new Logger('AI Grammar Checker');

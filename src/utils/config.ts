@@ -8,7 +8,7 @@ interface Config {
 // Define a function to save the configuration to chrome storage
 const saveConfig = (config: Config) => {
   chrome.storage.sync.set(config, () => {
-    console.log("Configuration saved successfully!");
+    console.log('Configuration saved successfully!');
   });
 };
 
@@ -17,7 +17,7 @@ const getConfig = () => {
   return new Promise<Config>((resolve) => {
     chrome.storage.sync.get(null, (result) => {
       const mergedConfig = { ...result };
-      console.log("Merged configuration:", mergedConfig);
+      console.log('Merged configuration:', mergedConfig);
       resolve(mergedConfig as Config);
     });
   });
